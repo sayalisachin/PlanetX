@@ -1,0 +1,435 @@
+
+h1, h2, h3, h4 { /* set font weight to 400 for all headings */
+    font-weight: 400;
+}
+
+body { /* set font family and margins for body */
+    font-family: 'Inter', sans-serif;
+    margin: 0 140px;
+    background-color: black;
+}
+
+header {
+    background-color: white; /* set the background color of the header */
+    padding: 20px; /* add some padding to the header */
+}
+
+.logo {
+    color: black; /* set the text color of the logo */
+}
+
+.nav-link {
+    color: black; /* set the text color of the navigation links */
+}
+
+header a:not(.button a) {
+    color: white; /* set text color */
+    text-decoration:wavy; /* add wavy text decoration */
+}
+
+.logo {
+    font-size: 20px; /* set font size */
+    font-weight: 600; /* set font weight */
+    color: paleturquoise; /* set text color */
+}
+
+.nav-all {
+    display: flex; /* use flex layout */
+    flex-direction: row; /* arrange items in a row */
+    align-items: center; /* vertically center the items */
+    justify-content: space-between; /* distribute the items evenly in the container */
+}
+
+.nav-1 {
+    display: flex; /* use flex layout */
+    gap:30%; /* add gap between the items */
+    align-items: center; /* vertically center the items */
+}
+
+/* rest of the code */
+
+
+
+
+body {
+	margin: 0;
+	position: relative;
+	min-height: 100vh;
+	overflow: hidden;
+}
+
+@keyframes float {
+	0% { transform: translate(-50%, 0) rotate(0); }
+	100% { transform: translate(-50%, -5%) rotate(1deg); }
+}
+
+@keyframes float2 {
+	0% { transform: translate(-50%, 0) rotate(0); }
+	100% { transform: translate(-50%, -100%) rotate(5deg); }
+}
+
+@keyframes moveArm1 {
+	0% { transform: rotate(-3deg);  }
+	100% { transform: rotate(5deg);  }
+}
+
+@keyframes moveArm2 {
+	0% { transform: rotate(-170deg); top: 42%; left: 54%;  }
+	100% { transform: rotate(-185deg); top: 42%; left: 55%; }
+}
+
+@keyframes moveLeg1 {
+	0% { transform: rotate(-3deg);  }
+	100% { transform: rotate(5deg);  }
+}
+
+@keyframes moveLeg2 {
+	0% { transform: rotate(-55deg); left: 51.5%; }
+	100% { transform: rotate(-45deg); left: 48%; }
+}
+
+@keyframes ufoFloat {
+	0% { transform: translate(-50%, -50%); }
+	100% { transform: translate(-50%, -51%); }
+}
+
+.canvas {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+	width: 100vmax;
+	height: 100vmax;
+	background:
+		radial-gradient(circle, #fff7 0.125vmin, #fff0 0) 50% 50% / 37% 30%,
+		radial-gradient(circle, #fff5 0.125vmin, #fff0 0) -60% -6% / 67% 45%,
+		radial-gradient(circle, #fff8 0.2vmin, #fff0 0) 17% 23% / 57% 41%,
+		radial-gradient(circle, #fff4 0.15vmin, #fff0 0) -21% -56% / 47% 55%,
+		linear-gradient(#204, #0000),
+		linear-gradient(#0000 50%, #f006),
+		radial-gradient(50% 50% at 50% 100%, #c9c5, #c9c0),
+		#369;
+	
+	& *,
+	& *::before,
+	& *::after {
+		position: absolute;
+		box-sizing: border-box;
+	}
+	
+	.cloud, .cloud::before {
+		--c: #c9c;
+		--clouds: radial-gradient(closest-side circle at 30% 30%, var(--c) 99%, #fff0 0),
+			radial-gradient(farthest-side circle at 8% 30%, var(--c) 10%, #fff0 0),
+			radial-gradient(farthest-side circle at 48% 45%, var(--c) 10%, #fff0 0),
+			radial-gradient(closest-side at 60% 50%, var(--c) 20%, #fff0 0),
+			radial-gradient(farthest-side circle at 76% 45%, var(--c) 13%, #fff0 0),
+			radial-gradient(farthest-side circle at 88% 40%, var(--c) 7%, #fff0 0),
+			radial-gradient(farthest-side circle at 106% 35%, var(--c) 15%, #fff0 0),
+			linear-gradient(#0000 45%, var(--c) 0),
+			radial-gradient(farthest-side circle at 8% 45%, var(--c) 10%, #fff0 0);
+		width: 100%;
+		height: 50vmax;
+		bottom: 0;
+		left: 0;
+    opacity: 0.06;
+		background: var(--clouds);
+		filter: blur(0.25vmin);
+		
+		&::before {
+			--c: #fff;
+			content: "";
+			transform: translate(0, 20%) scaleX(-1);
+			opacity: 0.5;
+			filter: blur(1vmin);
+		}
+	}
+	
+	.skyline {
+		width: 100%;
+		height: 40vmax;
+		left: 0;
+		bottom: 0;
+		
+		&::before {
+			content: "";
+			width: 100%;
+			height: 100%;
+			bottom: 0;
+			left: 0;
+			background: 
+				linear-gradient(#0000 50%, #000c),
+				conic-gradient(from 90deg at 98% 95%, #fff2 90deg, #0000 0) 0% 20% / 20vmax 20vmax,
+				conic-gradient(from 90deg at 98% 95%, #ff03 90deg, #0000 0) 17% 25% / 22vmax 20vmax,
+				conic-gradient(from 90deg at 98% 95%, #ff03 90deg, #0000 0) 21% 17% / 17vmax 21vmax,
+				conic-gradient(from 90deg at 98% 95%, #fff3 90deg, #0000 0) 18.5% -35% / 20vmax 23vmax,
+				conic-gradient(from 90deg at 96% 94%, #fff1 90deg, #0000 0) -8% -43% / 12vmax 19vmax,
+				linear-gradient(#f7c3, #012),
+				#000;
+			clip-path: polygon(
+				-5% 40%, 5% 40%, 5% 20%, 15% 20%, 15% 55%, 17% 55%, 17% 65%, 20% 65%,
+				22% 65%, 22% 27%, 29% 27%, 29% 46%, 33% 46%, 33% 42%, 44% 42%, 44% 60%,
+				50% 60%, 50% 10%, 52.5% 10%, 53% 0%, 53.5% 10%, 56% 10%, 56% 65%, 
+				60% 65%, 70% 65%, 70% 32%, 71% 32%, 71% 28%, 72% 28%, 72% 15%, 76% 15%,
+				76% 28%, 77% 28%, 77% 32%, 78% 32%, 78% 45%, 80% 45%, 80% 37%, 85% 37%,
+				85% 49%, 88% 49%, 88% 70%, 92% 70%, 92% 59%, 94% 59%, 98% 70%, 98% 40%,
+				105% 40%, 105% 105%, -5% 105%
+			)
+		}
+	}
+	
+	.person {
+		width: 28%;
+		height: 50%;
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%, 0);
+		background-repeat: no-repeat;
+		animation: float 5s infinite alternate;
+		
+		.head {
+			width: 15%;
+			aspect-ratio: 1;
+			background: #111;
+			border-radius: 50%;
+			left: 55%;
+			top: 30%;
+			box-shadow: inset 0.5vmax 1vmax 2vmax -1vmax #0ff8;
+			
+			&::before {
+				content: "";
+				width: 40%;
+				height: 80%;
+				left: 30%;
+				top: 50%;
+				background: #111;
+				transform: rotate(20deg);
+			}
+		}
+		
+		.torso {
+			width: 20%;
+			height: 15%;
+			background: #111;
+			border-radius: 100% / 60% 60% 120% 120%;
+			top: 39%;
+			left: 48%;
+			transform: rotate(10deg);
+			box-shadow: inset 1vmax 0.5vmax 1vmax -1.25vmax #0ff8;
+			
+			&::before {
+				content: "";
+				width: 120%;
+				height: 80%;
+				border-radius: 100% / 120% 50% 60% 100%;
+				background: #111;
+				right: 0;
+				bottom: -20%;
+				box-shadow: inset 1.5vmax 0.25vmax 1vmax -1.75vmax #0ff8;
+			}
+		}
+		
+		.arm {
+			width: 21%;
+			height: 18%;
+			border-radius: 0 100% 0 0;
+			box-shadow: 
+				inset -1vmax 1vmax 1vmax -1.25vmax #0ff8,
+				inset -1.25vmax 1.25vmax;
+			top: 38.5%;
+			left: 60%;
+			animation: moveArm1 7.5s -1s infinite alternate;
+			
+			&::before {
+				content: "";
+				width: 40%;
+				aspect-ratio: 1;
+				background: #111;
+				top: 100%;
+				left: 100%;
+				border-radius: 50%;
+				transform: translate(-80%, -50%);
+			}
+			
+			& + & {
+				width: 23%;
+				height: 15%;
+				transform: rotate(170deg);
+				top: 28%;
+				left: 32%;
+				box-shadow: 
+					inset -1vmax 1vmax 0.5vmax 0vmax #111,
+					inset -1vmax 1.25vmax #0ff8,
+					inset -1vmax 1.25vmax #111;
+				animation: moveArm2 7.5s -1s infinite alternate;
+				transform-origin: 0 0;
+				
+				&::before {
+					box-shadow: inset 0vmax -1vmax 2vmax -1.4vmax #0ff8;
+				}
+			}
+		}
+		
+		.donut {
+			width: 10%;
+			height: 7%;
+			box-shadow: 
+				inset 0vmax 1vmax 1vmax -0.5vmax #0ff8,
+				inset 0 0 0 1vmax #111;
+			border-radius: 50%;
+			left: 40%;
+			top: 9%;
+			transform: rotate(-14deg);
+			animation: float2 8s infinite alternate;
+			
+			& + & {
+				left: 30%;
+				top: 15%;
+				transform: rotate(10deg);
+				animation: float2 8s -1.5s infinite alternate;
+			}
+		}
+		
+		.leg {
+			width: 29%;
+			aspect-ratio: 0.8;
+			border-radius: 100% 0 0 0;
+			box-shadow: 
+				inset 1vmax 1vmax 1vmax -1.5vmax #0ff8,
+				inset 2vmax 1.75vmax #111;
+			top: 50%;
+			left: 30%;
+			transform-origin: 100% 0;
+			animation: moveLeg1 6s infinite alternate;
+			
+			&::before {
+				content: "";
+				width: 60%;
+				height: 20%;
+				background: #111;
+				border-radius: 100% 0 0 0;
+				top: 97%;
+				left: 0;
+				transform-origin: 60% 0;
+					transform: translate(-55%, -5%) rotate(-10deg);
+				box-shadow: inset 1.5vmax 0.5vmax 1vmax -1.5vmax #0ff3;
+			}
+			
+			& + & {
+				width: 27%;
+				left: 51.5%;
+				top:53%;
+				transform-origin: 50% 50%;
+				transform: rotate(-55deg);
+				box-shadow: inset 1.75vmax 2vmax #111;
+				animation: moveLeg2 4s infinite alternate;
+				
+				&::before {
+					transform: translate(-55%, -5%) rotate(-20deg);
+					box-shadow: none;
+				}
+			}
+		}
+	}
+	
+	.ufo {
+		left: 50%;
+		top: 25%;
+		width: 56%;
+		height: 30%;
+		transform: translate(-50%, -50%);
+		animation: ufoFloat 1.5s infinite alternate linear;
+		
+		.frame {
+			width: 100%;
+			height: 70%;
+			bottom: 0;
+			left: 0;
+			border-radius: 50%;
+			background:
+				radial-gradient(50% 35% at 50% 75%, #0ff6, #0000),
+				#214;
+			box-shadow:
+				inset 0 -1vmax 2vmax -2vmax #0ff,
+				inset 0 1.5vmax 3vmax 0vmax #012c,
+				inset 0 1vmax 1vmax #000c
+				;
+		}
+		
+		.base {
+			width: 35%;
+			aspect-ratio: 1;
+			background: 
+				radial-gradient(130% 15% at 50% 74%, #0ff 20%, #0000 32%),
+				radial-gradient(130% 15% at 50% 74%, #0ff6 30%, #0000 32%),
+				radial-gradient(70% 40% at 50% 100%, #fff6 30%, #fff0),
+				linear-gradient(#214, #325)
+				#f004;
+			left: 50%;
+			top: 48%;
+			border-radius: 50%;
+			transform: translate(-50%, 0);
+			
+		}
+		
+		.glass {
+			width: 40%;
+			height: 60%;
+			
+			left: 50%;
+			translate: -50% 0;
+			
+			&::before {
+				content: "";
+				width: 30%;
+				aspect-ratio: 1;
+				background:
+					radial-gradient(circle at 68% 35%, #dddc 10%, #0000 0),
+					radial-gradient(at 55% 55%, #000 35%, #0000 0),
+					white;
+				border-radius: 50%;
+				border: 1vmax solid #112820;
+				left: 50%;
+				top: 30%;
+				transform: translate(-50%, -50%);
+				box-shadow: 
+					-3vmax 0 0 -2vmax #112820,
+					0 4vmax 0 -2vmax #021
+			}
+			
+			&::after {
+				content: "";
+				width: 100%;
+				height: 100%;
+				border-radius: 100%  / 120% 120% 60% 60%;
+				background:
+					radial-gradient(at 70% 10%, #0ff2 5%, #0ff0 20%)
+					#0ff2;
+				box-shadow: inset 0 0 3vmax -1vmax #0ff;
+			}
+		}
+		
+		.beam {
+			width: 80%;
+			height: 100vmax;
+			background: #f003;
+			transform: translate(-50%, 0);
+			top: 96%;
+			left: 50%;
+			background: 
+				conic-gradient(from 173deg at 50% -40%, #0ff 14deg, #0000 0),
+				conic-gradient(from 170deg at 50% -40%, #0ff9 20deg, #0000 0);
+			
+			filter: blur(0.75vmax)
+		}
+	}
+}
+
+@media (prefers-reduced-motion) {
+	*, *::before, *::after {
+		animation: none !important;
+	}
+}
+footer .back-button:hover {
+    background-color: #ddd;
+}

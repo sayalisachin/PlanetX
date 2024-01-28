@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background-image: url(../assets/images/bgspace.jpg);
+        }
+        .mobile-nav.active {
+            display: block;
+            
+        }
+    </style>
+</head>
+<body class="bg-slate-100">
+
+    <header class="bg-white shadow">
+        <div class="container flex justify-between mx-auto p-5">
+            <div class="">
+                <h1><b>Planet X Social</b></h1>
+            </div>
+            <ul class="gap-5 text-gray-600 hidden lg:flex">
+                <li><a href="#" class="border border-white px-3 py-1 rounded-sm hover:border-gray-300 transition duration-300 ease-in-out">Feed</a></li>
+                <li><a href="#" class="border border-white px-3 py-1 rounded-sm hover:border-gray-300 transition duration-300 ease-in-out">Milestones</a></li>
+                <li><a href="#" class="border border-white px-3 py-1 rounded-sm hover:border-gray-300 transition duration-300 ease-in-out">Groups</a></li>
+            </ul>
+            <div class="gap-4 hidden lg:flex">
+               
+                <a href="#" class="align-middle flex font-semibold gap-1.5 justify-center w-full cursor-pointer">
+                    <img src="../assets/images/Avatar 01.svg" alt="" class="h-full">
+                    <button id="button-1" class="button"><a href="../landing_page/landing_page.html">Home</a></button>
+                </a>
+            </div>
+            <div class="align-middle flex lg:hidden" id="mobile-nav-btn">
+                <img src="../assets/images/Hamburger Menu.svg" alt="" class="cursor-pointer">
+            </div>
+        </div>
+        <div class="container mx-auto pt-1 pb-5 hidden px-5" id="mobile-nav">
+            <ul class="grid text-gray-600">
+                <li><a href="#" class="block border border-white duration-300 ease-in-out hover:border-gray-300 px-3 py-1 rounded-sm transition w-full">Feed</a></li>
+                <li><a href="#" class="block border border-white duration-300 ease-in-out hover:border-gray-300 px-3 py-1 rounded-sm transition w-full">Milestones</a></li>
+                <li><a href="#" class="block border border-white duration-300 ease-in-out hover:border-gray-300 px-3 py-1 rounded-sm transition w-full">Groups</a></li>
+                <li><a href="#" class="block border border-white duration-300 ease-in-out hover:border-gray-300 px-3 py-1 rounded-sm transition w-full font-semibold">Evans Jerry</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="container flex flex-col gap-5 lg:flex-row mx-auto p-5 py-10 text-gray-500">
+            <div class="-mt-5 bg-white h-full lg:mt-0 lg:order-none lg:w-1/4 order-2 p-7 rounded rounded-md w-full">
+        
+                <h2 class="font-semibold mb-5 text-gray-700 text-lg">Milestones</h2>
+                <ul class="gap-4 grid leading-5 mb-5 text-gray-500">
+                    <li class="flex gap-4 w-full">
+                        <img src="../assets/images/User Avatar 01.svg" alt="" class="">
+                        <p class="">Planet X has now launched Store</p>
+                    </li>
+                    <li class="flex gap-4 w-full">
+                        <img src="../assets/images/User Avatar 03.svg" alt="" class="">
+                        <p>Evacuated 10,000 Earthlings from Earth</p>
+                    </li>
+                    <li class="flex gap-4 w-full">
+                        <img src="../assets/images/User Avatar 04.svg" alt="" class="">
+                        <p>Scientists claimed we have have found 3 more ice glaciers</p>
+                    </li>
+                    <li class="flex gap-4 w-full">
+                        <img src="../assets/images/User Avatar 04-1.svg" alt="" class="">
+                        <p>100 Health Kits distributed to the needy</p>
+                    </li>
+                </ul>
+                <a href="#" class="align-middle flex font-semibold gap-2 text-orange-500 underline">
+                    <span>View all milestones</span>
+                    <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"></path>
+                    </svg>
+                </a>
+            </div>
+            <div class="h-full lg:order-none lg:w-1/2 order-first w-full">
+                <div class="bg-white flex gap-5 h-full px-7 py-5 rounded rounded-md mb-5">
+                    <img src="../assets/images/User Avatar 01.svg" alt="" class="w-2/24">
+                    <div class="relative w-full">
+                        <input type="text" placeholder="Share what you've been working on..." class="outline outline-1 outline-gray-300 pl-5 pr-12 py-2.5 rounded-lg w-full">
+                        <img src="../assets/images/Add Image.svg" alt="" class="absolute right-4 top-1/4">
+                    </div>
+                </div>
+                <div class="bg-white grid h-full mb-5 rounded rounded-md">
+                    <div class="align-middle flex justify-between pt-5 px-7">
+                        <div class="flex gap-4">
+                            <img src="../assets/images/User Avatar 05.svg" alt="">
+                            <div class="leading-5">
+                                <h4 class="font-bold text-black">Mellisa Bay</h4>
+                                <span>3h ago</span>
+                            </div>
+                        </div>
+                        <a href="#" class="align-middle border border-gray-300 flex gap-3 justify-center px-4 py-1 rounded rounded-lg"><img src="../assets/images/Report.svg" alt="" class=""><span class="">Report</span></a>
+                    </div>
+                    <div class="font-normal px-7 py-3 text-black">
+                        <p>10 Easy DIYs to elevated your living at Planet X! Helped me enjoy more gains.</p>
+                    </div>
+                    <div class="flex gap-3 pb-6 pt-3 px-7">
+                        <a href="#" class="align-middle border border-gray-300 flex gap-3 justify-center px-4 py-1 rounded rounded-lg"><img src="../assets/images/Comments.svg" alt=""><span>11 comments</span></a>
+                        <a href="#" class="align-middle border border-gray-300 flex gap-3 justify-center px-4 py-1 rounded rounded-lg"><img src="../assets/images/Reaction.svg" alt=""><span>24 reactions</span></a>
+                    </div>
+                </div>
+                <div class="bg-white grid h-full mb-5 rounded rounded-md">
+                    <div class="align-middle flex justify-between pt-5 px-7">
+                        <div class="flex gap-4">
+                            <img src="../assets/images/User Avatar 03.svg" alt="">
+                            <div class="leading-5">
+                                <h4 class="font-bold text-black">Jason Derulo</h4>
+                                <span>3h ago</span>
+                            </div>
+                        </div>
+                        <a href="#" class="align-middle border border-gray-300 flex gap-3 justify-center px-4 py-1 rounded rounded-lg"><img src="../assets/images/Report.svg" alt="" class=""><span class="">Report</span></a>
+                    </div>
+                    <div class="py-3">
+                        <img src="../assets/images/Image.png" alt="" class="w-full">
+                    </div>
+                    <div class="font-normal px-7 py-3 text-black">
+                        <p>Just released a space playlist. Adios Earth, Bonjour Planet X!</p>
+                    </div>
+                    <div class="flex gap-3 pb-6 pt-3 px-7">
+                        <a href="#" class="align-middle border border-gray-300 flex gap-3 justify-center px-4 py-1 rounded rounded-lg"><img src="../assets/images/Comments.svg" alt=""><span>36 comments</span></a>
+                        <a href="#" class="align-middle border border-gray-300 flex gap-3 justify-center px-4 py-1 rounded rounded-lg"><img src="../assets/images/Reaction.svg" alt=""><span>121 reactions</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col-reverse h-full lg:flex-col lg:order-none lg:w-1/4 order-last w-full">
+                <div class="">
+                    <img src="../assets/images/Overlay.png" alt="" class="lg:mb-4 lg:mt-0 mb-0 mt-4 w-full">
+                </div>
+                <div class="bg-white p-7 rounded rounded-md h-full">
+                    <h2 class="font-semibold mb-5 text-gray-700 text-lg">Trending Posts</h2>
+                    <ul class="gap-4 grid leading-5 mb-5 text-gray-500">
+                        <li class="gap-2 grid w-full">
+                            <p class="font-bold text-black">How to stop missing Earth.</p>
+                            <div class="flex justify-between">
+                                <span>David Rug</span>
+                                <span>6h ago</span>
+                            </div>
+                        </li>
+                        <li class="gap-2 grid w-full">
+                            <p class="font-bold text-black">Covid wasn't enough, now we evacuate Earth.</p>
+                            <div class="flex justify-between">
+                                <span>May Day</span>
+                                <span>2d ago</span>
+                            </div>
+                        </li>
+                        <li class="gap-2 grid w-full">
+                            <p class="font-bold text-black">Farming to be the next big career move?</p>
+                            <div class="flex justify-between">
+                                <span>Sara Jack</span>
+                                <span>4h ago</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#" class="align-middle flex font-semibold gap-2 text-orange-500 underline">
+                        <span>View all Stories</span>
+                        <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script>
+        let mobileNavBtn = document.getElementById("mobile-nav-btn");
+        let mobileNav = document.getElementById("mobile-nav");
+
+        mobileNavBtn.addEventListener("click", function() {
+            if(mobileNav.hasAttribute("class")) {
+                mobileNav.classList.toggle("active");
+            } else {
+                mobileNav.classList.toggle("active");
+            }
+        })
+    </script>
+    
+</body>
+</html>
