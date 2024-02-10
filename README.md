@@ -12,3 +12,4 @@ The Features Include:
 6) Space playlists powered by Spotify (for those who feel Earthsick)
 
 Welcome To Planet X, Earthlings.
+(Not Responsive To Mobile)
