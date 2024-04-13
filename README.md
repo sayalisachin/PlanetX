@@ -1,15 +1,43 @@
-Built For Exodus Event: IEEE
+# Planet X: A Distant Haven for Earth's Survivors
 
-Planet X is a distant planet that is a home away from home, where Earth's survivors settle on a distant planet and navigate a pandemic.
-This Project is built using Vanilla HTML, SCSS, and JS only.
+Planet X is a distant planet serving as a sanctuary for Earth's survivors, offering refuge amidst a pandemic-stricken world. This project, created exclusively using Vanilla HTML, SCSS, and JavaScript, aims to simulate life on this distant planet.
 
-The Features Include:
-1) A realistic planet having clouds, light, and sunrays on the Home page.
-2) A shop for shopping daily essentials to survive the space.
-3) A health store that sells health kits for space diseases.
-4) A cart that allows users to add/remove items, apply promo codes, and checkout.
-5) A community that updates Planet X's daily happenings, milestones, and posts.
-6) Space playlists powered by Spotify (for those who feel Earthsick)
+## Built For Exodus Event: IEEE
 
-Welcome To Planet X, Earthlings.
-(Not Responsive To Mobile)
+## Features
+
+- **Realistic Planet Simulation:** Experience a realistic representation of Planet X with dynamic clouds, light effects, and sunrays on the homepage.
+- **Space Shop:** Purchase daily essentials necessary for survival in space.
+- **Health Store:** Access a specialized store offering health kits tailored to combat space-related diseases.
+- **Interactive Cart:** Add or remove items, apply promo codes, and seamlessly checkout with the interactive cart feature.
+- **Community Updates:** Stay informed about Planet X's daily happenings, milestones, and community posts.
+- **Space Playlists:** Access curated playlists powered by Spotify for those who feel nostalgic or "Earthsick."
+
+## Welcome To Planet X, Earthlings.
+
+Note: The project is not responsive to mobile devices.
+
+## Technologies Used
+
+- Vanilla HTML
+- SCSS
+- JavaScript
+  
+## View On Netlify : https://65b6549141423d5713507aef--grand-sunflower-093c1b.netlify.app/
+
+## Getting Started
+
+1. **Clone the Repository:**
+- git clone https://github.com/sayalisachin/planet-x.git
+  
+2. **Open the Project:**
+- Navigate to the project directory and open it in your preferred code editor.
+
+3. **Explore Planet X:**
+- Open the `index.html` file in your web browser to explore the features of Planet X.
+
+## Contributing
+
+Contributions are welcome! Please follow the [contribution guidelines](CONTRIBUTING.md).
+
+
